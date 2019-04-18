@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Personal Trello Clone
+When I first thought of what to do for my full stack final project, I had no idea what to do.  I could have created a simple to do list and it would have fulfilled the requirements for the assignment. But where is the fun in that? 
 
-In the project directory, you can run:
+I have always been a sticky note girl. If I need to remember it it goes on a sticky note. and then placed where ever... The problem with that is the where ever part. I have a planner that goes with me where ever I go, but the problem with that is it never gets opened (except to make it pretty at the beginning of the week).  Sometimes sticky notes end up in there, but more often then not the sticky note disappears into the ether.
 
-### `npm start`
+I needed a place that can be my personal sticky note collector, that is to heavy to misplace. I was first introduced to the concept of a Kanban board during my LHM internship for www.1280thezone.com. We used Trello for our workflow and I thought to myself, "self, why can't I use one of these thing for my life?" And so a love affair with Trello began. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ultimately, I would love to have all the things I need to do up on a desktop app that I created (so I have personal pride and ownership in using it) up and running on my surface. Because the first thing I do in the morning is open up my Surface to read with my coffee. And then I get sucked into reading or social media and before I know it half the day is gone and I haven't done things like shop for food and my kids are angry that there isn't any food in the house. (Not really but you get the idea.)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I researched the crap outta the different technologies that I could go with on this project. But ultimately decided on the MERN tech stack (`MongoDB`, `Express.js` `React` and `Node.js`)
 
-### `npm test`
+The packages that I used in this project are:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - react-beautiful-dnd
+ - react-router-dom
+ - styled-components
+ - react-datepicker
+ - Material UI
+ - react-bootstrap
+ - react-fontawesome
 
-### `npm run build`
+### Initial github Commit
+For my Initial Commit I have pushed up my `MVP`. It has the ability to create new lists and tasks under specific lists. Everything can be updated and deleted. I have not gotten the drag and drop functionality working yet. This is just my bare bones to do list that has the styling of a trello board. 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I have the `API` working with `Micro` and will be porting it to `Express.js`.  The database is `MongoDB` and the data structure is solid. It is structured into two collections. One is for lists and the other for tasks. All of my tasks are tagged with a listID so that one task can only be associated with one list. But 1 board will be able to have multiple lists. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
